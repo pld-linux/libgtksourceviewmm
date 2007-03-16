@@ -6,6 +6,7 @@
 %bcond_without	apidocs		# don't generate documentation with doxygen
 #
 Summary:	A C++ binding of GtkSourceView
+Summary(pl.UTF-8):	Wiązania C++ dla GtkSourceView
 Name:		libgtksourceviewmm
 Version:	0.3.0
 Release:	1
@@ -27,6 +28,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 GtkSourceViewMM is a C++ binding of GtkSourceView, an extension to the
 text widget included in GTK+ 2.x adding syntax highlighting and other
 features typical for a source file editor.
+
+%description -l pl.UTF-8
+GtkSourceViewMM to wiązania C++ dla GtkSourceView, rozszerzenia
+tekstowego widget'u będącego częścią GTK+ 2.x, dodającego kolorowanie
+składni oraz inne właściwości typowe dla edytora kodu źródłowego.
 
 %package devel
 Summary:	Header files for libgtksourceviewmm library
