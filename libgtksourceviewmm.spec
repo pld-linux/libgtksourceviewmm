@@ -1,7 +1,4 @@
 #
-# TODO:
-# - finish pl description and summary
-#
 # Conditional build:
 %bcond_without	apidocs		# don't generate documentation with doxygen
 #
@@ -22,6 +19,7 @@ BuildRequires:	gtkmm-devel >= 2.10.8
 BuildRequires:	gtksourceview-devel >= 1.8.5
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
+Requires(post,postun):	/sbin/ldconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -95,6 +93,9 @@ rm -rf $RPM_BUILD_ROOT%{_docdir}/%{name}-1.0
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post	-p /sbin/ldconfig
+%postun	-p /sbin/ldconfig
 
 %files
 %defattr(644,root,root,755)
