@@ -28,8 +28,8 @@ text widget included in GTK+ 2.x adding syntax highlighting and other
 features typical for a source file editor.
 
 %description -l pl.UTF-8
-GtkSourceViewMM to wiązania C++ dla GtkSourceView, rozszerzenia
-tekstowego widget'u będącego częścią GTK+ 2.x, dodającego kolorowanie
+GtkSourceViewMM to wiązania C++ dla GtkSourceView - rozszerzenia
+tekstowego widgetu będącego częścią GTK+ 2.x, dodającego kolorowanie
 składni oraz inne właściwości typowe dla edytora kodu źródłowego.
 
 %package devel
