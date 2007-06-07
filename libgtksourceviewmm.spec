@@ -5,12 +5,12 @@
 Summary:	A C++ binding of GtkSourceView
 Summary(pl.UTF-8):	Wiązania C++ dla GtkSourceView
 Name:		libgtksourceviewmm
-Version:	0.3.0
+Version:	0.3.1
 Release:	1
 License:	LGPL
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/libgtksourceviewmm/0.3/%{name}-%{version}.tar.bz2
-# Source0-md5:	9f5a6bd4f523a7dc0f6256122e48848d
+# Source0-md5:	44282a68f4bbd5fc20c49d3c486d11f2
 URL:		http://home.gna.org/gtksourceviewmm/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.9
