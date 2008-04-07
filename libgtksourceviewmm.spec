@@ -6,7 +6,7 @@ Summary:	A C++ binding of GtkSourceView
 Summary(pl.UTF-8):	Wiązania C++ dla GtkSourceView
 Name:		libgtksourceviewmm
 Version:	0.3.1
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/libgtksourceviewmm/0.3/%{name}-%{version}.tar.bz2
@@ -37,6 +37,8 @@ Summary:	Header files for libgtksourceviewmm library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libgtksourceviewmm
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	gtkmm-devel >= 2.10.8
+Requires:	gtksourceview-devel >= 1.8.5
 
 %description devel
 Header files for libgtksourceviewmm library.
@@ -101,6 +103,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_libdir}/libgtksourceviewmm-1.0.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libgtksourceviewmm-1.0.so.2
 
 %files devel
 %defattr(644,root,root,755)
